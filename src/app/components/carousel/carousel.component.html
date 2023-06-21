@@ -1,0 +1,16 @@
+<section class="carousel">
+
+    <!-- Aqui, para cada imagem na lista de imagens, um div com a classe "carousel-item" é criado. 
+    A classe "active" será adicionada se o índice da imagem for o mesmo que o valor de "currentSlide". -->
+    <div class="carousel-item" *ngFor="let image of images; let i = index" [class.active]="i === currentSlide">
+        <img [src]="image" alt="Carrossel imagem">
+    </div>
+
+    <div class="carousel-indicators">
+         <!-- Para cada imagem na lista de imagens, um botão é criado. 
+        A classe "active" será adicionada se o índice da imagem for o mesmo que o valor de "currentSlide". -->
+        <button *ngFor="let image of images; 
+                let i = index" [class.active]="i === currentSlide"
+            (click)="changeSlide(i)"></button>
+    </div>
+</section>

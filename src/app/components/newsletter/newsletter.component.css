@@ -1,0 +1,74 @@
+.newsletter-container {
+  background-color: var(--color-main);
+  height: 60vh;
+  width: 100%;
+  font-weight: 900;
+  font-size: var(--font-size-title);
+  color: white;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10vh 0;
+}
+.newsletter-container .form-container {
+  justify-content: center;
+}
+.newsletter-container .form-container .input-container {
+  text-align: center;
+  display: grid;
+  grid-template-columns: 33% 34% 33%;
+  padding-top: 10vh;
+}
+.newsletter-container .form-container .input-container input {
+  margin: 10px;
+  border: none;
+  border-radius: 10px;
+  height: 10vh;
+  font-size: 20px;
+  text-indent: 25px;
+}
+.newsletter-container .form-container .input-container .input-field {
+  font-weight: 400;
+  box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.2);
+}
+.newsletter-container .form-container .input-container .submit-btn {
+  cursor: pointer;
+  background-color: var(--color-default);
+  color: var(--color-white);
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 480px) {
+  .newsletter-container {
+    height: 75vh;
+    font-size: 24px;
+    padding-top: 5vh;
+  }
+  .newsletter-container .form-container {
+    padding: 0 2%;
+  }
+  .newsletter-container .form-container .input-container {
+    grid-template-columns: 100%;
+    padding-top: 5vh;
+  }
+  .newsletter-container .form-container .input-container input {
+    margin-top: 5vh;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .newsletter-container {
+    height: 75vh;
+    font-size: 24px;
+    padding-top: 5vh;
+  }
+  .newsletter-container .form-container {
+    padding: 0 2%;
+  }
+  .newsletter-container .form-container .input-container {
+    grid-template-columns: 100%;
+    padding-top: 5vh;
+  }
+  .newsletter-container .form-container .input-container input {
+    margin-top: 5vh;
+  }
+}/*# sourceMappingURL=newsletter.component.css.map */

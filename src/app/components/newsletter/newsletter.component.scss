@@ -1,0 +1,58 @@
+@import 'mixin.newsletter';
+
+.newsletter-container {
+    background-color: var(--color-main);
+    height: 60vh;
+    width: 100%;
+    font-weight: 900;
+    font-size: var(--font-size-title);
+    color: white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10vh 0;
+
+    .form-container {
+        justify-content: center;
+
+        .input-container {
+            text-align: center;
+            display: grid;
+            grid-template-columns: 33% 34% 33%;
+            padding-top: 10vh;
+
+            input {
+
+                margin: 10px;
+                border: none;
+                border-radius: 10px;
+                height: 10vh;
+                font-size: 20px;
+                text-indent: 25px;
+
+            }
+
+            .input-field {
+                font-weight: 400;
+                box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.2);
+
+            }
+
+            .submit-btn {
+                cursor: pointer;
+                background-color: var(--color-default);
+                color: var(--color-white);
+                font-weight: 700;
+
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    @include media-queries-newsletter;
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    @include media-queries-newsletter;
+}

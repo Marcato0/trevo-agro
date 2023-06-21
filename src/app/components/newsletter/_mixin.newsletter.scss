@@ -1,0 +1,21 @@
+@mixin media-queries-newsletter {
+
+    .newsletter-container {
+        height: 75vh;
+        font-size: 24px;
+        padding-top: 5vh;
+
+        .form-container {
+            padding: 0 2%;
+
+            .input-container {
+                grid-template-columns: 100%;
+                padding-top: 5vh;
+
+                input {
+                    margin-top: 5vh;
+                }
+            }
+        }
+    }
+}

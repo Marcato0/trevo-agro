@@ -1,0 +1,42 @@
+@mixin media-queries-header {
+
+    .menu {
+        display: none;
+    }
+
+    .menu-line {
+        display: inline;
+    }
+
+    .whatsapp {
+        display: none;
+    }
+
+    .fake:checked~.menu-escondido {
+        position: fixed;
+        z-index: 998;
+        padding-top: 100px;
+        left: -50px;
+        height: 100vh;
+        width: 50vh;
+        background-color: var(--color-secondary);
+        box-shadow: 5px 0 15px rgba(0, 0, 0, 0.3);
+        border-radius: 5px;
+
+        .menu {
+            display: inline;
+
+            .lista__link {
+                padding: 1em 1em 1em 2em;
+            }
+        }
+    }
+
+    .fake:checked~.menu-line {
+        position: fixed;
+    }
+
+    .logo {
+        margin: 1em 5em 1em 150%;
+    }
+}

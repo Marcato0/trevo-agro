@@ -1,0 +1,70 @@
+@import 'mixin.header';
+.container-nav {
+    display: grid;
+    grid-template-columns: 30% 60% 10%;
+    background-color: var(--color-main);
+    text-align: center;
+    width: 100%;
+}
+
+.logo {
+    margin: 1em 5em 1em 1em;
+}
+
+.whatsapp {
+    margin: 2em 5em 0 1em;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 2.5em 0 0 0;
+
+    & a:hover {
+        color: var(--color-white);
+    }
+}
+
+.lista__link a {
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--color-default);
+    margin-left: 1em;
+}
+
+.fake {
+    position: fixed;
+    z-index: 1000;
+    width: 35px;
+    height: 35px;
+    opacity: 0;
+    margin: 2.5em 0 0 3.5em;
+    cursor: pointer;
+}
+
+.menu-line {
+    position: absolute;
+    z-index: 999;
+    margin: 2em 0 0 3.2em;
+    display: none;
+
+    span {
+        display: block;
+        width: 35px;
+        height: 5px;
+        margin-bottom: 10px;
+        background-color: var(--color-default);
+        border-radius: 5px;
+
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    @include media-queries-header;
+    
+}
+@media only screen and (min-width: 481px) and (max-width: 768px) { 
+    @include media-queries-header;
+
+}

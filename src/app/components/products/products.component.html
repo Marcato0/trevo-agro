@@ -1,0 +1,65 @@
+<app-carousel></app-carousel>
+
+<section class="categories-products-container">
+
+    <h2 class="texto">
+        <div>NAVEGUE PELAS CATEGORIAS</div>
+
+    </h2>
+    <ul class="categories-list">
+        <li>
+            <button (click)="showCategory('Tratores')">
+                <img src="../../../assets/imagens/trator.png" alt="Trator">
+                <p>Tratores</p>
+            </button>
+
+        </li>
+
+        <li><button (click)="showCategory('Implementos')">
+                <img src="../../../assets/imagens/implementos.png" alt="Implementos">
+                <p>Implementos</p>
+            </button>
+        </li>
+
+        <li><button (click)="showCategory('Pneus')">
+                <img src="../../../assets/imagens/Pneus.png" alt="Pneus">
+                <p>Pneus</p>
+            </button>
+        </li>
+
+        <li><button (click)="showCategory('Locacao')">
+                <img src="../../../assets/imagens/Locacao.png" alt="Locação">
+                <p>Locação</p>
+            </button>
+        </li>
+
+        <li>
+            <button (click)="showCategory('Pecas')">
+                <img src="../../../assets/imagens/Pecas.png" alt="Peças">
+                <p>Peças</p>
+            </button>
+        </li>
+
+        <li><button (click)="showCategory('Caminhoes')">
+                <img src="../../../assets/imagens/Caminhoes.png" alt="Caminhões">
+                <p>Caminhões</p>
+            </button>
+        </li>
+
+    </ul>
+
+</section>
+
+<section class="contrast-container">
+
+    <ul class="contrast-list">
+        <li *ngFor="let product of filteredProducts">
+            <img [src]="product.photo" [alt]="product.name">
+            <h2>{{product.name}}</h2>
+            <p>{{product.description}}</p>
+        </li>
+
+
+    </ul>
+
+</section>

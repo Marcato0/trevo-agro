@@ -1,0 +1,27 @@
+:root {
+    --color-main: #0DB04B;
+    --color-secondary: #EC6608;
+    --color-gray: #333333;
+    --color-default: #000000;
+    --color-icon: #EC6608;
+    --color-white: #FFFFFF;
+    --font-size-title: 48px;
+    --font-size-subtitle: 36px;
+    --font-size-word: 16px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color-white);
+    color: var(--color-default);
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: var(--font-size-word);
+    font-style: normal;
+    font-weight: 400;
+
+}

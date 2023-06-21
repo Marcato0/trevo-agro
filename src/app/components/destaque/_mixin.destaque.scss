@@ -1,0 +1,11 @@
+@mixin media-queries-destaque {
+
+    .destaques {
+        font-size: 24px;
+
+        .canavial {
+            width: 90%;
+            height: 50vh;
+        }
+    }
+}

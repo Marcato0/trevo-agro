@@ -1,0 +1,33 @@
+@mixin media-queries-footer {
+
+    .container-footer {
+        display: block;
+
+        .rodape__logo {
+            margin-right: 50%;
+            padding-top: 50px;
+        }
+
+        h2 {
+            margin-right: 50%;
+        }
+
+        p {
+            margin-right: 20%;
+        }
+
+        .endereço {
+            margin-bottom: 10px;
+        }
+
+        .up {
+            margin-top: 25px;
+            margin-left: 5vh;
+            padding-bottom: 25px;
+        }
+
+        .redes-sociais {
+            margin-right: 20%;
+        }
+    }
+}

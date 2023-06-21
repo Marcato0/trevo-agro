@@ -1,0 +1,108 @@
+@charset "UTF-8";
+.container-footer {
+  display: grid;
+  grid-template-columns: 35% 30% 20% 15%;
+  background-color: var(--color-gray);
+  color: var(--color-white);
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+}
+.container-footer .rodape__logo {
+  display: flex;
+  margin-left: 20%;
+  margin-top: 50px;
+}
+.container-footer h2 {
+  display: flex;
+  margin-left: 20%;
+  margin-top: 50px;
+  font-weight: 700;
+  font-size: var(--font-size-subtitle);
+}
+.container-footer p {
+  text-align: justify;
+  margin-left: 20%;
+}
+.container-footer .texto-abaixo {
+  margin-top: 10%;
+}
+.container-footer .espaco-acima {
+  margin-top: 1em;
+}
+.container-footer .endereço {
+  margin-bottom: 100px;
+}
+.container-footer .up {
+  margin-top: 200px;
+}
+.container-footer .redes-sociais {
+  margin-left: 20%;
+  padding-top: 25px;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+}
+
+.container-footer-copyright {
+  background-color: var(--color-default);
+  color: var(--color-white);
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 480px) {
+  .container-footer {
+    display: block;
+  }
+  .container-footer .rodape__logo {
+    margin-right: 50%;
+    padding-top: 50px;
+  }
+  .container-footer h2 {
+    margin-right: 50%;
+  }
+  .container-footer p {
+    margin-right: 20%;
+  }
+  .container-footer .endereço {
+    margin-bottom: 10px;
+  }
+  .container-footer .up {
+    margin-top: 25px;
+    margin-left: 5vh;
+    padding-bottom: 25px;
+  }
+  .container-footer .redes-sociais {
+    margin-right: 20%;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .container-footer {
+    display: block;
+  }
+  .container-footer .rodape__logo {
+    margin-right: 50%;
+    padding-top: 50px;
+  }
+  .container-footer h2 {
+    margin-right: 50%;
+  }
+  .container-footer p {
+    margin-right: 20%;
+  }
+  .container-footer .endereço {
+    margin-bottom: 10px;
+  }
+  .container-footer .up {
+    margin-top: 25px;
+    margin-left: 5vh;
+    padding-bottom: 25px;
+  }
+  .container-footer .redes-sociais {
+    margin-right: 20%;
+  }
+}/*# sourceMappingURL=footer.component.css.map */

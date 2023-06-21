@@ -1,0 +1,36 @@
+.destaques {
+  text-align: center;
+  align-items: center;
+  font-size: var(--font-size-title);
+  font-weight: 900;
+  color: var(--color-main);
+  height: 100%;
+  margin-bottom: 5%;
+}
+.destaques .texto {
+  margin: 5% 5% 3% 5%;
+}
+.destaques .canavial {
+  border-radius: 15px;
+  width: 90%;
+  height: 80vh;
+}
+
+@media only screen and (max-width: 480px) {
+  .destaques {
+    font-size: 24px;
+  }
+  .destaques .canavial {
+    width: 90%;
+    height: 50vh;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .destaques {
+    font-size: 24px;
+  }
+  .destaques .canavial {
+    width: 90%;
+    height: 50vh;
+  }
+}/*# sourceMappingURL=destaque.component.css.map */

@@ -1,0 +1,12 @@
+@mixin media-queries-contrast {
+
+    .contrast-container {
+        h1 {
+            font-size: 24px;
+        }
+
+        .contrast-list {
+            margin-top: 5vh;
+        }
+    }
+}

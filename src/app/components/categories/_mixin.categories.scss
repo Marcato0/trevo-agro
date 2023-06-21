@@ -1,0 +1,33 @@
+@mixin media-queries-categories {
+
+    .categories-container {
+
+        display: inline;
+
+        .categories-list {
+            justify-content: space-around;
+            margin-left: 0;
+
+            .display-none {
+                display: none;
+            }
+        }
+
+        h2 {
+            .link {
+                display: inline;
+                color: var(--color-main);
+
+                &:hover {
+                    color: var(--color-icon);
+                }
+            }
+
+            div {
+                display: none;
+            }
+
+            font-size: 24px;
+        }
+    }
+}

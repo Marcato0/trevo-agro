@@ -1,0 +1,97 @@
+.categories-container {
+  width: 100%;
+  height: 60%;
+  padding: 0 50px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+  list-style: none;
+  margin-top: 10vh;
+}
+.categories-container h2 {
+  font-size: var(--font-size-title);
+  font-weight: 900;
+  color: var(--color-main);
+}
+.categories-container h2 .link {
+  display: none;
+}
+.categories-container .categories-list {
+  flex-wrap: wrap;
+  display: flex;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+}
+.categories-container .categories-list li {
+  height: 150px;
+  width: 150px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  margin: 10px;
+}
+.categories-container .categories-list li a {
+  text-decoration: none;
+  color: var(--color-icon);
+}
+.categories-container .categories-list li a img {
+  height: 50px;
+}
+.categories-container .categories-list li a p {
+  margin-top: 20px;
+}
+
+@media only screen and (max-width: 480px) {
+  .categories-container {
+    display: inline;
+  }
+  .categories-container .categories-list {
+    justify-content: space-around;
+    margin-left: 0;
+  }
+  .categories-container .categories-list .display-none {
+    display: none;
+  }
+  .categories-container h2 {
+    font-size: 24px;
+  }
+  .categories-container h2 .link {
+    display: inline;
+    color: var(--color-main);
+  }
+  .categories-container h2 .link:hover {
+    color: var(--color-icon);
+  }
+  .categories-container h2 div {
+    display: none;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .categories-container {
+    display: inline;
+  }
+  .categories-container .categories-list {
+    justify-content: space-around;
+    margin-left: 0;
+  }
+  .categories-container .categories-list .display-none {
+    display: none;
+  }
+  .categories-container h2 {
+    font-size: 24px;
+  }
+  .categories-container h2 .link {
+    display: inline;
+    color: var(--color-main);
+  }
+  .categories-container h2 .link:hover {
+    color: var(--color-icon);
+  }
+  .categories-container h2 div {
+    display: none;
+  }
+}/*# sourceMappingURL=categories.component.css.map */
